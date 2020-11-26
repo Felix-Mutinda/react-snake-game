@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="{% static 'js/address_from_postcode.js' %}"></script>
+    <title>Address From Postcode</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <fieldset class="address">
+            <input type="text" name="address[postcode]" id="" class="postcode">
+            <input type="button" value="Lookup Address" class="lookup">
+            <textarea cols="30" rows="10" class="address"></textarea>
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Save">
+        </fieldset>
+    </form>
+</body>
+</html>
