@@ -1,3 +1,3 @@
-# react-snake-game
+# Interactive React Snake Game
 
-Check it out: [Snake Game](http://highskool.herokuapp.com)  
+Check it out: [Snake Game](http://reactsnakegem.herokuapp.com)  
