@@ -1,1 +1,1 @@
-web: gunicorn snake_game.wsgi
+web: python manage.py collectstatic --no-input; gunicorn snake_game.wsgi --log-file
